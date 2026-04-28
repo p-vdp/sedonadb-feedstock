@@ -10,7 +10,7 @@ source:
   sha256: 808a38f955dc1dc1c68793a2a6c707abf6299d5f2371ff7dd7b4a3c267e67333
 
 build:
-  number: 3
+  number: 4
   script:
     # Windows workaround for upstream geos pkg-config flag'-lstdc++' flag, which breaks MSVC
     # Consider moving this to bld.bat
@@ -51,7 +51,6 @@ requirements:
   run:
     - python
     - apache-sedona
-    - geos
 
 test:
   requires:
